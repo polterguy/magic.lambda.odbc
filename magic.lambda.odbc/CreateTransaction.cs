@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using magic.lambda.odbc.helpers;
 using hlp = magic.data.common.helpers;
 
-namespace magic.lambda.mysql
+namespace magic.lambda.odbc
 {
     /// <summary>
     /// [odbc.transaction.create] slot for creating a new MySQL database transaction.

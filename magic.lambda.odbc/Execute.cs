@@ -8,7 +8,7 @@ using magic.signals.contracts;
 using magic.data.common.helpers;
 using magic.lambda.odbc.helpers;
 
-namespace magic.lambda.mysql
+namespace magic.lambda.odbc
 {
     /// <summary>
     /// [odbc.execute] slot for executing a non query SQL command.
