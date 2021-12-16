@@ -2,8 +2,8 @@
 # Magic Lambda for ODBC
 
 This is the ODBC data adapter for Magic. This project provides slots to open an ODBC database
-connection, and such allows you to declare your own SQL statements to be executed towards an ODBC
-connection. Slots this project contains are as follows.
+connection, and allows you to execute your own SQL statements towards an ODBC connection. Slots
+this project contains are as follows.
 
 * __[odbc.connect]__ - Connects to a database
 * __[odbc.select]__ - Executes an arbitrary SQL statement, and returns results of reader as lambda object to caller
