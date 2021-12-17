@@ -12,7 +12,7 @@ using magic.lambda.odbc.helpers;
 namespace magic.lambda.odbc
 {
     /// <summary>
-    /// [odbc.connect] slot for connecting to a MySQL server instance.
+    /// [odbc.connect] slot for connecting to an ODBC database server instance.
     /// </summary>
     [Slot(Name = "odbc.connect")]
     public class Connect : ISlot, ISlotAsync

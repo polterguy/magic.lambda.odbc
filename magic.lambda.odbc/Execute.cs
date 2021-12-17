@@ -11,7 +11,7 @@ using magic.lambda.odbc.helpers;
 namespace magic.lambda.odbc
 {
     /// <summary>
-    /// [odbc.execute] slot for executing a non query SQL command.
+    /// [odbc.execute] slot for executing a non query SQL command towards a previously opened ODBC connection.
     /// </summary>
     [Slot(Name = "odbc.execute")]
     public class Execute : ISlot, ISlotAsync

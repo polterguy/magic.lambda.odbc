@@ -2,9 +2,9 @@
  * Magic Cloud, copyright Aista, Ltd. See the attached LICENSE file for details.
  */
 
+using System.Threading.Tasks;
 using magic.node;
 using magic.signals.contracts;
-using System.Threading.Tasks;
 using magic.lambda.odbc.helpers;
 using hlp = magic.data.common.helpers;
 

@@ -11,7 +11,7 @@ using magic.lambda.odbc.helpers;
 namespace magic.lambda.odbc
 {
     /// <summary>
-    /// [odbc.scalar] slot for executing a scalar type of SQL command.
+    /// [odbc.scalar] slot for executing a scalar type of SQL commands.
     /// </summary>
     [Slot(Name = "odbc.scalar")]
     public class Scalar : ISlot, ISlotAsync
