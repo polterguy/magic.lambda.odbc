@@ -8,6 +8,7 @@ using magic.node.contracts;
 using magic.signals.contracts;
 using magic.data.common.helpers;
 using magic.lambda.odbc.helpers;
+using magic.data.common.contracts;
 
 namespace magic.lambda.odbc
 {
@@ -17,15 +18,15 @@ namespace magic.lambda.odbc
     [Slot(Name = "odbc.connect")]
     public class Connect : ISlot, ISlotAsync
     {
-        readonly IMagicConfiguration _configuration;
+        readonly IDataSettings _settings;
 
         /// <summary>
         /// Creates a new instance of your class.
         /// </summary>
-        /// <param name="configuration">Configuration for your application.</param>
-        public Connect(IMagicConfiguration configuration)
+        /// <param name="settings">Configuration object.</param>
+        public Connect(IDataSettings settings)
         {
-            _configuration = configuration;
+            _settings = settings;
         }
 
         /// <summary>
@@ -40,7 +41,7 @@ namespace magic.lambda.odbc
                     input,
                     "odbc",
                     null,
-                    _configuration)))
+                    _settings)))
             {
                 signaler.Scope(
                     "odbc.connect",
@@ -63,7 +64,7 @@ namespace magic.lambda.odbc
                     input,
                     "odbc",
                     null,
-                    _configuration)))
+                    _settings)))
             {
                 await signaler.ScopeAsync(
                     "odbc.connect",
